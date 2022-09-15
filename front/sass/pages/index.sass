@@ -87,15 +87,15 @@ body
       top: 110px
       position: absolute
     &-1
-      animation: animWom1 2s ease
-      animation-delay: 5.5s
+      animation: animWom1 1.5s ease
+      animation-delay: 3s
       animation-fill-mode: forwards
     &-2
       opacity: 0
       width: 60vh
       right: -77px
-      animation: animWom2 17s ease infinite //23
-      animation-delay: 6.5s
+      animation: animWom2 6s ease infinite //23
+      animation-delay: 3s
       transform: translateX(140%)
       &.pause
         animation-play-state: paused
@@ -103,16 +103,16 @@ body
       opacity: 0
       width: 60vh
       right: -41px
-      animation: animWom2 17s ease infinite //28
-      animation-delay: 12s
+      animation: animWom2 6s ease infinite //28
+      animation-delay: 5s
       picture
         top: 39px
       &.pause
         animation-play-state: paused
     &-4
       opacity: 0
-      animation: animWom2 17s ease infinite //35
-      animation-delay: 17.5s
+      animation: animWom2 6s ease infinite //35
+      animation-delay: 7s
       &.pause
         animation-play-state: paused
 
@@ -335,13 +335,16 @@ body
     opacity: 1
   50%
     opacity: 0
+  70%
+    transform: translateX(-50%)
+    opacity: 0
   100%
-    transform: translateX(-100%)
+    transform: translateX(-50%)
     opacity: 0
 
 @keyframes animWom2
   0%
-    transform: translateX(100%)
+    transform: translateX(50%)
     opacity: 0
   10%
     opacity: 1
@@ -351,7 +354,7 @@ body
     transform: translateX(0)
   40%
     opacity: 0
-    transform: translateX(-100%)
+    transform: translateX(-50%)
 
 
 @keyframes animWom4
