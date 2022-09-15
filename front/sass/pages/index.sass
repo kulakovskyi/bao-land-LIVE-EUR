@@ -87,34 +87,31 @@ body
       top: 110px
       position: absolute
     &-1
-      animation: animWom1 1.5s ease
-      animation-delay: 3s
+      animation: animWom1 1.5s cubic-bezier(.95,.09,.33,.49)
+      animation-delay: 2s
       animation-fill-mode: forwards
     &-2
       opacity: 0
       width: 60vh
       right: -77px
-      animation: animWom2 6s ease infinite //23
-      animation-delay: 3s
+      animation: animWom2 6s cubic-bezier(.95,.09,.33,.49) infinite //23
+      animation-delay: 2s
       transform: translateX(140%)
-      &.pause
-        animation-play-state: paused
+
     &-3
       opacity: 0
       width: 60vh
       right: -41px
-      animation: animWom2 6s ease infinite //28
-      animation-delay: 5s
+      animation: animWom2 6s cubic-bezier(.95,.09,.33,.49) infinite //28
+      animation-delay: 4s
       picture
         top: 39px
-      &.pause
-        animation-play-state: paused
+
     &-4
       opacity: 0
-      animation: animWom2 6s ease infinite //35
-      animation-delay: 7s
-      &.pause
-        animation-play-state: paused
+      animation: animWom2 6s cubic-bezier(.95,.09,.33,.49) infinite //35
+      animation-delay: 6s
+
 
 
   &__info
