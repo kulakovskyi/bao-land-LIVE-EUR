@@ -1,0 +1,87 @@
+$blue: #000055
+$magenta: #ff267e
+$green: #05C489
+$green-hover: #09B47F
+$gray: #EDEDED
+$text: #292929
+
+$gilroy-500: Gilroy-500, sans-serif
+$gilroy-800: Gilroy-800, sans-serif
+$gilroy-900: Gilroy-900, sans-serif
+
+//picture.usik__image-main
+//    source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/usik-mob.png")
+//    source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/usik-landscape.png")
+//    source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/usik-tab.png")
+//    source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/usik-desc.png")
+//    img(src="img/usik-desc.png" alt="Favbet")
+
+
+body
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  background: $blue
+  img,
+  picture
+    max-width: 100%
+    height: auto
+
+.container
+  max-width: 700px
+  margin: auto
+
+.usik-link
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  z-index: 60
+
+.bao
+  width: 100%
+  height: 100%
+  overflow: hidden
+  position: relative
+  @media screen and (min-width: 700px) and (orientation: landscape) and (min-height: 451px)
+    background: url('../img/bg-desc.jpg') no-repeat 50% 0/cover
+  @media screen and (min-width: 601px) and (max-width: 1024px) and (orientation: portrait)
+    background: url('../img/bg-tab.jpg') no-repeat 50% 0/cover
+  @media screen and (max-width: 600px) and (orientation: portrait)
+    background: url("../img/bg-mob.jpg") no-repeat 50% 0/cover
+  @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+    background: url("../img/bg-landscape.jpg") no-repeat 50% 0/cover
+  &__logo
+    max-width: 250px
+    position: absolute
+    top: 65px
+    left: 70px
+  &__footer
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    right: 235px
+    bottom: 75px
+    img
+      display: inline-block
+      &:not(:last-child)
+        margin: 0 30px 0 0
+
+
+  //&__pic
+  //  height: 100%
+  //  //width: 50%
+  //  position: relative
+  //
+  //&__image
+  //  height: 95vh
+  //  position: absolute
+  //  width: 100vh
+  //  top: 165px
+  //  right: 50px
+  //  z-index: 2
+  //  picture
+  //    height: 100%
+  //    position: absolute
+  //    top: 0
