@@ -225,6 +225,74 @@
     &__rulet
       right: 106px
 
+/*************************************TABLET******************************************/
+
+@media screen and (max-width: 1024px) and (orientation: portrait)
+  .bao
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      width: 100%
+      height: 172px
+      background: linear-gradient(180deg, #243080 0%, rgba(0, 117, 255, 0) 100%)
+      transform: rotate(180deg)
+      z-index: 20
+    &__logo
+      max-width: 145px
+      top: 30px
+      left: 50%
+      transform: translateX(-50%)
+    &__wrapper
+      flex-direction: column-reverse
+    &__info
+      margin-top: 176px
+      align-items: center
+    &__title
+      text-align: center
+      font-size: 56px
+      line-height: 62px
+      margin: 0 0 15px 0
+      br:first-child
+        display: none
+    &__text
+      font-size: 22px
+      line-height: 26px
+      text-align: center
+    &__info
+      position: static
+    &__link
+      padding: 24px 60px 22px
+      font-size: 30px
+      line-height: 36px
+      position: absolute
+      bottom: 108px
+      left: 50%
+      transform: scale(1) translateX(-50%)
+      margin: 0
+    &__footer
+      position: absolute
+      bottom: 30px
+      left: 50%
+      transform: scale(1) translateX(-50%)
+    &__pic
+      position: absolute
+      bottom: 0
+      transform-origin: bottom right
+      transform: scale(0.8)
+    &__womans-wrapper
+      transform-origin: bottom right
+      transform: scale(0.95)
+      right: -196px
+    .parallax
+      left: -107px
+      &__layer
+        &-item
+          transform: scale(1.2)
+
+
+
+
 
 
 
