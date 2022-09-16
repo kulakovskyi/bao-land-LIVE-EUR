@@ -68,7 +68,7 @@ body
     display: flex
     justify-content: flex-end
   &__rulet
-    width: 86vh
+    width: 933px
     position: absolute
     bottom: -212px
     right: 210px
@@ -120,6 +120,8 @@ body
     align-items: flex-start
     margin-top: 135px
     white-space: nowrap
+    position: relative
+    z-index: 20
   &__title
     font-family: $gilroy-800
     white-space: nowrap
@@ -161,11 +163,14 @@ body
         margin: 0 30px 0 0
 
 
+
 .parallax
   width: 100%
   height: 100%
   position: absolute
-  top: 0
+  bottom: 0px
+  left: 20px
+  z-index: 15
   &__layer
     height: 100%
     right: 0
